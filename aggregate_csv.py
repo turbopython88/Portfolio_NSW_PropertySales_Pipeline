@@ -1,3 +1,5 @@
+#Import assets 
+
 import sys, pandas as pd
 from pathlib import Path
 
@@ -8,7 +10,7 @@ def classify_region(pc: str) -> str:
     except:
         return "Unknown"
 
-    # Ranges/sets you provided
+    # From postcode file
     # Sydney Metro: 2000-2234
     if 2000 <= p <= 2234:
         return "Sydney Metropolitan"
@@ -87,3 +89,4 @@ if __name__ == "__main__":
     final_csv.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(final_csv, index=False)
     print(f"Wrote {len(df)} rows -> {final_csv}")
+

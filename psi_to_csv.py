@@ -1,6 +1,6 @@
 # Parses a single NSW PSI .DAT (2001-current) into a tidy CSV.
 # Keeps B-records; maps key fields; basic typing and address assembly.
-
+# Import Assets
 import sys, pandas as pd
 from pathlib import Path
 
@@ -92,3 +92,4 @@ if __name__ == "__main__":
     out.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(out, index=False)
     print(f"Wrote {len(df)} rows -> {out}")
+

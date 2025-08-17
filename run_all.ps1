@@ -1,6 +1,5 @@
 # Usage:
 #   powershell -ExecutionPolicy Bypass -File .\scripts\run_all.ps1
-# (Optionally pass -Py to point to a specific Python, e.g., -Py "C:\Python313\python.exe")
 
 param(
   [string]$Py = "python"
@@ -46,3 +45,4 @@ New-Item -ItemType Directory -Force -Path $Proc | Out-Null
 python scripts\aggregate_csvs.py $Stage $Final
 
 Write-Host "`nDone. Final file: $Final"
+

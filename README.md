@@ -141,7 +141,7 @@ Filters to NSW where state_code == "NSW"
 
 Aggregates duplicates in postcode file (uses mean lat/lon per (place_name, postcode))
 
-**7) scripts/fuzzy_fix_postcode_scope.py — Fuzzy + postcode centroid fallback **
+**7) scripts/fuzzy_fix_postcode_scope.py — Fuzzy + postcode centroid fallback**
 
 Purpose: Push match rate to ~99.9% safely:
 

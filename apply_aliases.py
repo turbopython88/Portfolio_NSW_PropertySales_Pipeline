@@ -1,3 +1,4 @@
+#Import assets
 import pandas as pd
 from pathlib import Path
 
@@ -24,3 +25,4 @@ sales.drop(columns=["canonical_locality"], inplace=True)
 SALES_OUT.parent.mkdir(parents=True, exist_ok=True)
 sales.to_csv(SALES_OUT, index=False)
 print(f"Wrote {SALES_OUT}")
+

@@ -2,6 +2,8 @@
 
 Transform NSW Valuer General property sales into an analysis-ready, geocoded dataset suitable for BI dashboards (e.g., Looker Studio). The pipeline is compliant (open data only), reproducible (one-command run), and explainable (version-controlled alias map, data tests).
 
+You can find the looker output here: https://lookerstudio.google.com/reporting/d6fb75bb-3db3-4d03-97ba-71cdf3f52365
+
 Raw ZIPs (.zip)  →  DAT files (.DAT)  →  Staging CSVs (one per DAT)
           →  Clean sales (psi_sales_clean.csv)
               →  Alias-applied (psi_sales_clean_alias.csv)
